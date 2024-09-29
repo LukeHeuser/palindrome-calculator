@@ -8,7 +8,11 @@ public class NumberPalindrome {
         isPalindrome(98589);
         isPalindrome(-1265789524);
         isPalindrome(-13231);
-
+        isPalindrome(598654842);
+        isPalindrome(-98655689);
+        isPalindrome(-98655689);
+        isPalindrome(Integer.MAX_VALUE);
+        isPalindrome(Integer.MIN_VALUE);
 
     }
     public static boolean isPalindrome(int number){
@@ -19,7 +23,6 @@ public class NumberPalindrome {
 
             int lastDigit = original % 10;
             reverse = (reverse * 10) + lastDigit;
-
 
             original /= 10;
         }
